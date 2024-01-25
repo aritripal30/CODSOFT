@@ -1,0 +1,10 @@
+import random
+lowercase = 'abcdefghijklmnopqrstuvwxyz'
+uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+symbol = '!@#$%^&*_:.'
+number = '0123456789'
+all = lowercase + uppercase + number + symbol + number
+length  = 9
+password = "".join(random.sample(all,length))
+print("The Generated Password is: ",password)
+
